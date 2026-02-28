@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio website with background, projects, and resume."
+    />
+    <title>Your Name | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="#home">Your Name</a>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <p class="kicker">Personal Website</p>
+        <h1>Hi, I'm Your Name.</h1>
+        <p class="hero-text">
+          I'm a <strong>role/title</strong> who enjoys building thoughtful digital
+          experiences. I care about clean design, practical engineering, and
+          solving real user problems.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">See Projects</a>
+          <a class="btn btn-secondary" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Open Resume</a>
+        </div>
+      </section>
+
+      <section id="about" class="card">
+        <h2>About Me</h2>
+        <p>
+          Write 2-4 short paragraphs here to introduce yourself. Mention your
+          background, what you're currently working on, and the kind of roles
+          or opportunities you're looking for.
+        </p>
+        <p>
+          Example: I'm currently focused on frontend development with strong
+          interest in UI performance and accessibility. I enjoy shipping products
+          that feel polished and reliable.
+        </p>
+      </section>
+
+      <section id="projects" class="card">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <article class="project-item">
+            <h3>Project One</h3>
+            <p>Short summary of what this project does and the problem it solves.</p>
+            <p class="tags">HTML · CSS · JavaScript</p>
+            <a href="#" aria-label="Project One link">View project</a>
+          </article>
+          <article class="project-item">
+            <h3>Project Two</h3>
+            <p>Short summary of your contribution and any measurable result.</p>
+            <p class="tags">React · Node.js</p>
+            <a href="#" aria-label="Project Two link">View project</a>
+          </article>
+          <article class="project-item">
+            <h3>Project Three</h3>
+            <p>Short summary emphasizing impact, users, or key features.</p>
+            <p class="tags">TypeScript · API</p>
+            <a href="#" aria-label="Project Three link">View project</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="resume" class="card">
+        <h2>Resume</h2>
+        <p>
+          Add your resume PDF at <code>assets/resume.pdf</code>. Visitors can
+          open it in-browser or download it.
+        </p>
+        <a class="btn btn-primary" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">View Resume (PDF)</a>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/your-username">github.com/your-username</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/your-profile">linkedin.com/in/your-profile</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Your Name. Built with HTML and CSS.</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
